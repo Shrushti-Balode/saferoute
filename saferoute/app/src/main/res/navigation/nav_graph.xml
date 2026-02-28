@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/safety_map_fragment">
+
+    <fragment
+        android:id="@+id/safetyFragment"
+        android:name="com.example.saferoute.ui.safety.SafetyFragment"
+        android:label="Safety"
+        tools:layout="@layout/fragment_safety">
+        <action
+            android:id="@+id/action_safetyFragment_to_mapFragment"
+            app:destination="@id/safety_map_fragment" />
+        <action
+            android:id="@+id/action_safetyFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+        <action
+            android:id="@+id/action_safetyFragment_to_checkInFragment"
+            app:destination="@id/checkInFragment" />
+        <action
+            android:id="@+id/action_safetyFragment_to_sosContactsFragment"
+            app:destination="@id/sosContactsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/safety_map_fragment"
+        android:name="com.example.saferoute.ui.map.MapFragment"
+        android:label="Map"
+        tools:layout="@layout/fragment_map">
+        <action
+            android:id="@+id/action_mapFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+        <action
+            android:id="@+id/action_mapFragment_to_sosContactsFragment"
+            app:destination="@id/sosContactsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="com.example.saferoute.ui.safety.ReportFragment"
+        android:label="Report"
+        tools:layout="@layout/fragment_report" />
+    <fragment
+        android:id="@+id/checkInFragment"
+        android:name="com.example.saferoute.ui.safety.CheckInFragment"
+        android:label="Check-In"
+        tools:layout="@layout/fragment_checkin" />
+    <fragment
+        android:id="@+id/sosContactsFragment"
+        android:name="com.example.saferoute.ui.safety.SosContactsFragment"
+        android:label="SOS Contacts"
+        tools:layout="@layout/fragment_sos_contacts" />
+</navigation>

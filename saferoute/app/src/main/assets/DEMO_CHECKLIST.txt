@@ -1,0 +1,9 @@
+Seed DB: On first run, the app should seed the database with police stations and pickup spots.
+Open Map -> Tap Search bar -> choose 'Nearest safe cab pickup spot' -> Toast and marker should appear
+Tap 'Nearest safe area' -> Toast and marker
+Tap 'Search destination' -> enter lat,lon -> marker and camera move
+Tap Report button -> Report screen opens and save stores in DB
+Open SOS: On the map, the SOS button should open the SMS app with pre-filled coordinates.
+Save Report: The report screen should save a report to the local database.
+Start Check-in: The check-in screen should start a timer.
+Let it expire: If the check-in timer expires, the SMS app should open with a pre-filled message.

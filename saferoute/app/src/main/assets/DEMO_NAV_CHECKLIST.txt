@@ -1,0 +1,8 @@
+1. First run: App seeds the database with POIs, street lights, and graph data.
+2. Open Map: The map should open and center on Pune.
+3. Search: Tap the search bar and type "Shivaji". Suggestions should appear.
+4. Select Suggestion: Choose a suggestion. The suggestions should disappear, and a route should be drawn on the map.
+5. Change Safety Slider: Move the slider and search for another destination. The new route should reflect the change in safety weighting.
+6. No Route: Search for a destination far away from Pune. A "No route found" message should appear.
+7. Offline Search: Disconnect from the internet. Search for a pickup spot. The nearest pickup spot should be shown.
+8. Report: Tap the report button. The report screen should open. Fill it out and save it. The report should be saved locally.
